@@ -28,6 +28,7 @@ class WPHostedPaymentForm(forms.Form):
     startDelayUnit = forms.CharField(widget=forms.HiddenInput(), required=False)
     startDelayMult = forms.CharField(widget=forms.HiddenInput(), required=False)
 
+    country = forms.CharField(widget=forms.HiddenInput(),required=False)
     instId = forms.CharField(widget=forms.HiddenInput)
     cartId = forms.CharField(widget=forms.HiddenInput)
     amount = forms.DecimalField(widget=forms.HiddenInput)
